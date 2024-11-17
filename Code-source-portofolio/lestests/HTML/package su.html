@@ -1,0 +1,38 @@
+package su.devinombrev2;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class App {
+    
+    public static void main(String[] args) {
+        //Menu
+        System.out.println("Bienvenue dans ma 2nde version de devine le nombre");
+        System.out.println("Le principe est l'inverse de mon jeu précédent, je vais tenter de deviner le nombre auquel tu pense, tu me donnera les indications + ou - pour m'aider.");
+        System.out.println("Le nombre devra être situé entre 0 et 100");
+        System.out.println("C'est parti !");
+
+        //Nombre a deviner:
+        int user_number;
+        int rendu_machine;
+
+        //Boucle
+        while (user_number != rendu_machine){
+             //Scanner
+            Scanner entree_clavier = new Scanner(System.in);
+
+             //Random
+            Random Random = new Random();
+            rendu_machine = Random.nextInt (100) + 1;
+
+            //Print
+            System.out.println("Est-ce que votre nombre est " + rendu_machine + "?");
+
+            //Indications du joueur
+            int IndicationJoueur = entree_clavier.nextInt();
+
+            //If Else
+            if (user_number = rendu_machine)
+    }
+    
+}

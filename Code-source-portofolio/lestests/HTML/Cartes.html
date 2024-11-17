@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique</title>
+    <link rel="stylesheet" href="/lestests/CSS/cartes.css">
+</head>
+
+
+<script>
+    async function fetchTechNews() {
+        const apiKey = 'Ton token';  // 
+        const url = 'https://newsapi.org/v2/everything?q=technologie&sortBy=publishedAt&apiKey=' + apiKey;
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+
+            const articles = data.articles;
+
+            articles.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+            let newsContainer = document.createElement('div');
+            newsContainer.className = 'news-container';
+
+            articles.forEach(article => {
+                let newsCard = document.createElement('div');
+                newsCard.className = 'news-card';
+
+                let articleImage = article.urlToImage ? `<img src="${article.urlToImage}" alt="${article.title}">` : '';
+
+                newsCard.innerHTML = `
+                    ${articleImage}
+                    <div class="news-content">
+                        <h3>${article.title}</h3>
+                        <p>${article.description || 'Description non disponible'}</p>
+                        <p><small>Publié le : ${new Date(article.publishedAt).toLocaleDateString()}</small></p>
+                        <a href="${article.url}" target="_blank">Lire l'article complet</a>
+                    </div>
+                `;
+                newsContainer.appendChild(newsCard);
+            });
+
+            document.body.appendChild(newsContainer);
+        } catch (error) {
+            console.error("Erreur lors de la récupération des données", error);
+        }
+    }
+
+    fetchTechNews();
+</script>
+
+
+
+<body>
+
+    <header>
+        <h1>Veille Technologique</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Catégories</a>
+                <ul class="submenu">
+                    <li><a href="#cybersecurite">Cybersécurité</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="ia">
+            <h2>Intelligence Artificielle</h2>
+            <p>L'intelligence artificielle est l'un des domaines les plus actifs de la veille technologique. Elle
+                concerne la création de systèmes capables de réaliser des tâches qui nécessitent généralement une
+                intelligence humaine.</p>
+        </section>
+
+        <section id="cloud">
+            <h2>Cloud Computing</h2>
+            <p>Le cloud computing permet de stocker et de gérer des données sur des serveurs distants, offrant
+                flexibilité et accès aux ressources à tout moment.</p>
+        </section>
+
+        <section id="blockchain">
+            <h2>Blockchain</h2>
+            <p>La blockchain est une technologie de registre distribué qui garantit la sécurité et la transparence des
+                transactions numériques.</p>
+        </section>
+
+        <section id="cybersecurite">
+            <h2>Cybersécurité</h2>
+            <p>La cybersécurité est essentielle pour protéger les systèmes, les réseaux et les données contre les
+                attaques malveillantes.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veille Technologique</p>
+    </footer>
+
+
+</body>
+
+</html>

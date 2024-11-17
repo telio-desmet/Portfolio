@@ -1,0 +1,142 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Styles pour le menu déroulant */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.submenu li a {
+    padding: 0.5rem;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Conteneur pour les articles */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Style pour chaque carte d'article */
+.news-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image de l'article */
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contenu de l'article */
+.news-content {
+    padding: 15px;
+}
+
+.news-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.news-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.news-content a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
+}
+
+/* Petit texte pour la date de publication */
+.news-content small {
+    display: block;
+    margin-bottom: 10px;
+    color: #999;
+}

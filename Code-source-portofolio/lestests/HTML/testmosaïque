@@ -1,0 +1,52 @@
+              
+            <link rel="stylesheet" href="/lestests/CSS/codemosaique.css">
+            <link rel="stylesheet" href="/lestests/JSON/jsmosaique.json">
+
+            <div class="mise-en-page">
+              <div class="bloc-mise-en-page"> 
+                <h2>Avec bordures</h2>
+                <div class="grid-main wdgmozaic wdgmozaic-noblend" data-cells="5"><img src="https://cdn.pixabay.com/photo/2016/11/18/18/58/couple-1836407_960_720.jpg"></div>
+              </div>
+              <div class="bloc-mise-en-page"> 
+                <h2>Avec mix-blend-mode</h2>
+                <div class="grid-main wdgmozaic wdgmozaic-blend" data-cells="5">
+                  <img src="https://cdn.pixabay.com/photo/2016/11/18/18/58/couple-1836407_960_720.jpg"></div>
+              </div>
+            </div>
+            <hr>
+            <div class="mise-en-page-lien"> 
+              <div class="bloc-mise-en-page bloc-lien">
+                <h2>Liens Css Utiles</h2>
+                <ul>
+                  <li><a href="https://www.zonecss.fr/proprietes-css/display-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css display</a></li>
+                  <li><a href="https://www.zonecss.fr/proprietes-css/text-align-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css text-align</a></li> 
+                  <li><a href="https://www.zonecss.fr/proprietes-css/padding-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css padding</a></li>
+                  <li><a href="https://www.zonecss.fr/proprietes-css/gap-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css gap</a></li> 
+                  <li><a href="https://www.zonecss.fr/proprietes-css/grid-template-rows-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css grid-template-rows</a></li> 
+                  <li><a href="https://www.zonecss.fr/proprietes-css/grid-template-columns-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css grid-template-columns</a></li> 
+                  <li><a href="https://www.zonecss.fr/proprietes-css/grid-auto-columns-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css grid-auto-columns</a></li> 
+                  <li><a href="https://www.zonecss.fr/proprietes-css/grid-row-start-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css grid-row-start </a></li> 
+                  <li><a href="https://www.zonecss.fr/proprietes-css/grid-column-start-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css grid-column-start</a></li>  
+                  <li><a href="https://www.zonecss.fr/proprietes-css/grid-column-end-css.html#oJXZYW00000.codepen" target="_blank">Propriété Css grid-column-end</a></li>
+                  <li><a href="https://www.zonecss.fr/cours-css/les-selecteurs-css.html#oJXZYW00000.codepen" target="_blank">Les sélecteurs CSS</a></li> 
+            
+                </ul>
+              </div> 
+              <div class="bloc-mise-en-page bloc-lien">
+                <h2>Liens codepen </h2>
+                <ul>
+                  <li><a href="https://codepen.io/Zonecss/pen/JjoXRNE" target="_blank" title="Glossaire CSS">[CSS] Création d'un modèle de grille spécifique [image de taille aléatoire] v1</a></li>
+                  <li><a href="https://codepen.io/Zonecss/pen/rNOyMwy" target="_blank" title="Glossaire CSS">[CSS] Création d'un modèle de grille spécifique [image de taille aléatoire] v2</a></li>
+                </ul>
+              </div>
+              <div class="bloc-mise-en-page bloc-lien bloc-sites">
+                <h2>Sites</h2>
+                <ul>
+                  <li><a href="https://www.zonecss.fr/#oJXZYW00000.codepen" target="_blank" title="Glossaire CSS">Zone CSS</a></li>
+                  <li><a href="http://www.aliasdmc.fr/#oJXZYW00000.codepen" target="_blank" title="Glossaire HTML/JAVASCRIPT">Zone (X)HTML</a></li>
+                  <li><a href="https://web-color.aliasdmc.fr/#oJXZYW00000.codepen" target="_blank" title="Couleurs pour le WEb (#,rgb,hsl)">Couleurs Web</a></li>
+                  <li><a href="https://outils-css.aliasdmc.fr/#oJXZYW00000.codepen" target="_blank">Outils CSS</a></li>
+                  <li><a href="https://outils-javascript.aliasdmc.fr/#oJXZYW00000.codepen" target="_blank">Outils Javascript</a></li>
+                </ul>
+              </div>
+            </div>

@@ -1,0 +1,26 @@
+
+function addDiivs(aWdgMozaic){
+    for(let oEle of aWdgMozaic){
+      let oContent = document.createElement("div"),
+          iNbCells = oEle.dataset.cells;
+      if(iNbCells > 0){
+        oContent.className = 'wdgmozaic-grid';
+        for(let i = 0; i <iNbCells; i++){
+          let oDiv = document.createElement("div");
+          oDiv.className = 'wdgmozaic-item' ;
+          oContent.appendChild(oDiv);
+        }  
+        oEle.appendChild(oContent);
+      }
+    }
+  }
+  function initWdgMozaic(){
+    let aWdgMozaic = document.getElementsByClassName("wdgmozaic-noblend");
+    addDiivs(aWdgMozaic);
+    aWdgMozaic = document.getElementsByClassName("wdgmozaic-blend");
+    addDiivs(aWdgMozaic)
+  }//fct 
+  
+  document.addEventListener('DOMContentLoaded',function(){
+    initWdgMozaic(); 
+  }); 
