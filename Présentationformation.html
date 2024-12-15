@@ -1,67 +1,152 @@
-<html>
-  <html> 
-  <center>
-  <head>
-    <h1>Télio Desmet - Ma formation</h1>
-    <style>
-      img{
-        width: 250px;
-      }
-      .forme{
-        clip-path: circle(110px at center);
-      }
-      </style>
-      
-      <img src="/Documents/Images/Corner.png" class="forme">
-    <title>Télio Desmet; le portofolio-Ma formation</title>
-    <link rel="stylesheet" href="/CSS/codedeco.css">
-    </head>
-    </head>
-  </head>
-</center>
-
-	
-
-
-<style> 
-  body { color : RGB(255, 255, 255) }
-  body {background-color: rgba(0, 0, 0, 0.555);}
-  </style>
-
-  <body> 
-    <section>
-         </div> 
-     </div>
-     <div id="header">
-            <nav>
-                <ul>
-                  <a href="accueil.html">Accueil</a></li>
-                    <a href="diplomes.html">Mes diplomes</a></li>
-                    <a href="Présentationformation.html">Présentation de ma formation</a></li>
-                    <a href="CV.html">Mon CV</a></li>
-                    <a href="veilletechno.html">Ma veille technologique</a><li>
-                    <a href="Presentationperso.html">Présentation personelle</a></li>
-                    <a href="Loisirs.html">Mes Loisirs</a></li>
-                    <a href="mecontacter.html">Me contacter</a></li>
-                </ul>
-            </nav>
-          </div>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <title>Télio Desmet; Présentation de la formation BTS SIO</title>
-  </head>
-
-  <body> 
-    <section>
-      <center>
-        <h2> Présentation du BTS SIO </h2>
-        <p>Le BTS-SIO est une formation de type Brevet de Technicien superieur qui porte sur l'informatique, celle-ci se divise en 2 spécialitées, le SLAM et le SISR.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télio Desmet - Ma formation</title>
+    <link rel="stylesheet" href="/CSS/codedeco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: rgb(46, 27, 27);
+            background-color: rgba(74, 72, 72, 0.555);
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+        img {
+            width: 250px;
+        }
+        .forme {
+            clip-path: circle(110px at center);
+        }
+        #header {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        #header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        #header nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        #warning {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.51);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        #warning img {
+            width: 110px;
+        }
+        #content {
+            width: 100%;
+            padding: 40px 0;
+            background-color: #ffffff;
+        }
+        #content form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-right img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .bottom-links{
+            display: block;
+            background-color: #4c60af;
+            color:#ccc;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
         <nav>
             <ul>
-                <li> Le SLAM est une spécialité de programation, on y apprend le développement en divers langages de programation tel que le Java</li>
-                <li> Le SISR est une spécialité d'entretien de serveurs réseaux</li>
+                <li><a href="reworkaccueil.html">Accueil</a></li>
+                <li><a href="reworkdiplomes.html">Mes diplômes</a></li>
+                <li><a href="reworkformation.html">Ma formation</a></li>
+                <li><a href="reworkCV.html">Mon CV</a></li>
+                <li><a href="reworkveilletechno.html">Ma veille technologique</a></li>
+                <li><a href="reworkpresentationperso.html">Présentation personnelle</a></li>
+                <li><a href="reworkcontact.html">Me contacter</a></li>
             </ul>
-      </center>
         </nav>
-    </section>
-  </body>
+    </header>
+
+    <main>
+        <h1>Télio Desmet - Ma formation</h1>
+        <img src="/le.portfolio.telio.desmet/Code-source-portofolio/Documents/Images/Corner.png" class="forme" alt="Image décorative">
+
+        <section id="warning">
+            <img src="https://cdn-icons-png.flaticon.com/512/552/552871.png" alt="Icône d'avertissement" class="icon-warning">
+            <p>Attention ! Le site est en cours de développement, des imprévus peuvent survenir. Merci de me faire part de vos remarques via la page "Me Contacter". Le contenu et le design de ce site sont susceptibles d'évoluer. Merci de votre compréhension !</p>
+        </section>
+
+        <br>
+
+        <section id="content">
+            <div class="content-head" id="content-head">
+                <strong><h1>Voici ma formation</h1></strong>
+            </div>
+            <div class="presentation" id="presentation">
+                <br>
+        <h3>BTS-SIO</h3>
+        <p>Je suis dans un cursus de BTS (Brevet de Technicien Supérieur) qui est le BTS SIO signifiant Service Informatique aux Organisations.</p>
+        <p>Cette formation nous apprend d’abord sur le premier semestre de la première année les bases à la fois de la programmation et des infrastructures réseau avant d’entrer dans le réel sur le 2nd semestre et sur l’intégralité de la 2ème année</p>
+        <p>Cette formation se divise en 2 spécialités :</p>
+        <li><h4>La spécialité SLAM :</h4>
+            <p>La spécialité « SLAM » pour « Solution Logicielle et Applications Métiers » Cette spécialité est dédiée à la programmation logicielle en plusieurs langages tel que le Java ou autres.</p></li>
+        <li><h4>La spécialité SISR :</h4>
+            <p>La spécialité SISR pour « Solution d’Infrastructures Systèmes et Réseau » Cette spécialité est dédiée à la création et l’entretien des systèmes réseaux</p></li>
+        <li><h4>La cybersécurité :</h4>
+            <p>Commun aux 2 spécialités, les cours de cybersécurité sont dédiés à nous apprendre la sécurité dans un milieu informatique, penchant plus coté développement pour les élève en SLAM et coté réseau pour les élèves en SISR.</p></li>
+            </div>
+        </section>
+        <br>
+        <section id="bottom-links" class="bottom-links">
+            <br>
+            <h2>Suivez-moi sur :</h2>
+            		<ul class="logos" id="logos">
+                <a target="blank" href="https://www.linkedin.com/in/t%C3%A9lio-desmet-44877a328/">
+                    <img src="/le.portfolio.telio.desmet/Code-source-portofolio/Documents/Images/logo_linkedin.png" alt="Cliquez pour visiter mon Linkedin" title ="Cliquez pour visiter mon Linkedin" style="width: 70px"/>
+                </a>
+                <a target="blank" href="https://profile.indeed.com/?hl=fr_FR&co=FR&from=gnav-homepage"> 
+                    <img src="/le.portfolio.telio.desmet/Code-source-portofolio/Documents/Images/logo_indeed.png" alt="Cliquez pour visiter mon Indeed" title ="Cliquez pour visiter mon Indeed" style="width: 70px;"/>
+                </a>
+            </ul>
+            <p>Contactez-moi également par téléphone : 06 74 80 33 19</p>
+            <p>Ou envoyez moi un mail dirrectement depuis le site par l'onglet "Me Contacter"</p>
+            <br>
+        </section>
+    </main>
+</body>
 </html>
