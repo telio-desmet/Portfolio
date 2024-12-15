@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Télio Desmet - Mes diplomes</title>
+    <title>Télio Desmet - Mes Diplomes</title>
     <link rel="stylesheet" href="/CSS/codedeco.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<center>
     <style>
         body {
             color: rgb(46, 27, 27);
             background-color: rgba(74, 72, 72, 0.555);
             font-family: 'Roboto', sans-serif;
             text-align: center;
+            margin: 0;
         }
         img {
             width: 250px;
@@ -30,10 +30,9 @@
             list-style: none;
             padding: 0;
             margin: 0;
-        }
-        #header nav ul li {
-            display: inline;
-            margin: 0 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
         }
         #header nav ul li a {
             color: white;
@@ -45,69 +44,103 @@
         #header nav ul li a:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
-    </style>
-    </head>
-
-</head>
-<body>
-    <h1>Télio Desmet - Le portfolio - Mes diplomes</h1>
-    <img src="/le.portfolio.telio.desmet/Code-source-portofolio/Documents/Images/Corner.png" class="circle" alt="Image décorative">
-    <style>
         #warning {
             width: 100%;
-            height: 10vh;
-            background-color: #7c000083;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.51);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        #warning img {
+            width: 110px;
+        }
+        #content {
+            width: 100%;
+            padding: 40px 0;
+            background-color: #ffffff;
+        }
+        #content form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align:center;
+            gap: 20px;
         }
-            #warning form {
-                width: 50%;
-                height: 50%;
-                background-color: #ff0000;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0)
-                }
-                #warning form input, #warning form textarea {
-                width: 10%;
-                padding: 10px;
-                border: none;
-                }
-                .icon-warning {
-                width: 110px;
-                height: auto;
-            }
-        </style>
-    
-    <div class="warning" id ="warning">
-        <img src =https://cdn-icons-png.flaticon.com/512/552/552871.png alt ="icone de warning" class="icon-warning">
-        <p>Attention ! Le site est encore en cours de développement, il est donc possible que vous rencontrez des imprévus, pour m'aider à améliorer le site, n'hésitez pas à me faire part de vos remarques via la page "Me Contacter". Le contennu ainsi que le design de ce site seront propice au changement Merci de votre compréhension</p>
-        <img src =https://cdn-icons-png.flaticon.com/512/552/552871.png alt ="icone de warning" class="icon-warning">
-    </div>    
-    <div id="header">
+        .contact-right img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .bottom-links{
+            display: block;
+            background-color: #4c60af;
+            color:#ccc;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
         <nav>
             <ul>
                 <li><a href="reworkaccueil.html">Accueil</a></li>
                 <li><a href="reworkdiplomes.html">Mes diplômes</a></li>
-                <li><a href="reworkformation.html">Présentation de ma formation</a></li>
+                <li><a href="reworkformation.html">Ma formation</a></li>
                 <li><a href="reworkCV.html">Mon CV</a></li>
                 <li><a href="reworkveilletechno.html">Ma veille technologique</a></li>
                 <li><a href="reworkpresentationperso.html">Présentation personnelle</a></li>
                 <li><a href="reworkcontact.html">Me contacter</a></li>
             </ul>
         </nav>
-    </div>
-<div class="content">
-    <h2>J'ai passé différents diplomes quel l'on peut retrouver sur mon CV ainsi que sur cette page qui comporte plus de détails.</h2>
-    <p>Voici les diplômes que j'ai obtenu</p>
-</div>
-<div class="diplomes">
-    <li><p>Le baccalauréat général obtenu avec mention assez bien</p></li>
-    <li><p>le brevet des collèges obtenu avec mention très bien</p></li>
-    <li><p>la license Cambridge (certification d'anglais) obtennu avec B2</p></li>
-    <li><p>le TOEIC obtenu avec B1 à l'écrit et B2 à l'oral</p></li>
-</div>
+    </header>
+
+    <main>
+        <h1>Télio Desmet - Mes diplomes</h1>
+        <img src="/le.portfolio.telio.desmet/Code-source-portofolio/Documents/Images/Corner.png" class="forme" alt="Image décorative">
+
+        <section id="warning">
+            <img src="https://cdn-icons-png.flaticon.com/512/552/552871.png" alt="Icône d'avertissement" class="icon-warning">
+            <p>Attention ! Le site est en cours de développement, des imprévus peuvent survenir. Merci de me faire part de vos remarques via la page "Me Contacter". Le contenu et le design de ce site sont susceptibles d'évoluer. Merci de votre compréhension !</p>
+        </section>
+
+        <br>
+
+        <section id="content">
+            <div class="content-head" id="content-head">
+                <strong><h1>Voici mes diplomes</h1></strong>
+            </div>
+            <div class="presentation" id="presentation">
+                <br>
+                <p>Le baccalauréat général obtenu avec mention assez bien</p>
+                <p>le brevet des collèges obtenu avec mention très bien</p>
+                <p>la license Cambridge (certification d'anglais) obtennu avec B2</p>
+                <p>le TOEIC obtenu avec B1 à l'écrit et B2 à l'oral</p>
+            </div>
+        </section>
+        <br>
+        <section id="bottom-links" class="bottom-links">
+            <br>
+            <h2>Suivez-moi sur :</h2>
+		<ul class="logos" id="logos">
+                <a target="blank" href="https://www.linkedin.com/in/t%C3%A9lio-desmet-44877a328/">
+                    <img src="/le.portfolio.telio.desmet/Code-source-portofolio/Documents/Images/logo_linkedin.png" alt="Cliquez pour visiter mon Linkedin" title ="Cliquez pour visiter mon Linkedin" style="width: 70px"/>
+                </a>
+                <a target="blank" href="https://profile.indeed.com/?hl=fr_FR&co=FR&from=gnav-homepage"> 
+                    <img src="/le.portfolio.telio.desmet/Code-source-portofolio/Documents/Images/logo_indeed.png" alt="Cliquez pour visiter mon Indeed" title ="Cliquez pour visiter mon Indeed" style="width: 70px;"/>
+                </a>
+            </ul>
+            <p>Contactez-moi également par téléphone : 06 74 80 33 19</p>
+            <p>Ou envoyez moi un mail dirrectement depuis le site par l'onglet "Me Contacter"</p>
+            <br>
+        </section>
+    </main>
 </body>
 </html>
